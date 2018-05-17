@@ -5,7 +5,7 @@
 This directory contains software developed by Ultralytics LLC. For more information on Ultralytics projects please visit:
 http://www.ultralytics.com  
 
-# PETSYS
+# PETSYS Description
 
 The https://github.com/ultralytics/petsys repo contains analysis of gamma scatters on LYSO crystals coupled to SiPMs. This data was collected at PETSYS labs in Lisbon, Portugal in 2017. This code performs energy calibration and timing resolution analysis of the data.
 
@@ -21,7 +21,7 @@ Ultralytics MATLAB common functions must also be cloned and added to the MATLAB 
 1. From a shell: ```$ git clone https://github.com/ultralytics/matlab-common```
 2. From MATLAB Command Window: ```>> apppath(genpath('/matlab-common'))```
 
-# Running PETSYS analysis
+# Running
 Run ```testSingles.m``` in MATLAB.
 
 <img src="https://github.com/ultralytics/petsys/blob/master/results.png" width="1000"> 
