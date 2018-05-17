@@ -5,7 +5,7 @@
 This directory contains software developed by Ultralytics LLC. For more information on Ultralytics projects please visit:
 http://www.ultralytics.com  
 
-# PETSYS Description
+# Description
 
 The https://github.com/ultralytics/petsys repo contains analysis of gamma scatters on LYSO crystals coupled to SiPMs. This data was collected at PETSYS labs in Lisbon, Portugal in 2017. This code performs energy calibration and timing resolution analysis of the data.
 
