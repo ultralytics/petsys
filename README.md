@@ -24,7 +24,7 @@ Ultralytics MATLAB common functions must also be cloned and added to the MATLAB 
 # Running PETSYS analysis
 Run ```testSingles.m``` in MATLAB.
 
-![Alt](https://github.com/ultralytics/petsys/results.png "results")
+<img src="https://github.com/ultralytics/petsys/results.png" width="200"> 
 
 # Contact
 
