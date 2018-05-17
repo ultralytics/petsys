@@ -18,8 +18,8 @@ MATLAB with the following toolbox installed:
 
 Ultralytics MATLAB common functions must also be cloned and added to the MATLAB path:
 
-1. From a shell: ```$ git clone https://github.com/ultralytics/matlab-common```
-2. From MATLAB Command Window: ```>> apppath(genpath('/matlab-common'))```
+1. From shell: ```$ git clone https://github.com/ultralytics/matlab-common```
+2. From MATLAB: ```>> apppath(genpath('/matlab-common'))```
 
 # Running
 Run ```testSingles.m``` in MATLAB.
