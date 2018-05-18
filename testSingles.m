@@ -21,7 +21,6 @@ i=find(abs(dt)<maxdt & diff(X(:,3))~=0);  nc=numel(i);
 sca; fhistogram(dt(i),50); xlabel(sprintf('dt_{%g-%g keV} (ps)',e1,e2))
 
 fprintf('\n%g singles over %.4f seconds (%.1f Hz)\n%g energy candidate singles (%g-%g keV)\n%g dt candidate pairs (<%g ps dt)\n',na,tspan,na/tspan,nb,e1,e2,nc,maxdt);
-end
 
 
 function X = calibrateEnergy(X)
@@ -47,4 +46,3 @@ sca; histogram(a,x);  xyzlabel('E_{Exp1 calibrated} (keV)')
 sca; histogram(b,x);  xyzlabel('E_{Exp2 calibrated} (keV)')
 sca; histogram(c,x);  xyzlabel('E_{PCHIP calibrated} (keV)')
 X(:,2)=a;
-end
