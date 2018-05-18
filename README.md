@@ -11,7 +11,7 @@ The https://github.com/ultralytics/petsys repo contains analysis of gamma scatte
 
 # Requirements
 
-[MATLAB](target="_blank" https://www.mathworks.com/products/matlab.html) >= 2018a with the following toolbox installed:  
+[MATLAB](https://www.mathworks.com/products/matlab.html) >= 2018a with the following toolbox installed:  
 
 - ```Statistics and Machine Learning Toolbox```
 - ```Signal Processing Toolbox```
