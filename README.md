@@ -19,7 +19,12 @@ The https://github.com/ultralytics/petsys repo contains analysis of gamma scatte
 Ultralytics MATLAB common functions must also be cloned and added to the MATLAB path:
 
 1. From shell: ```$ git clone https://github.com/ultralytics/matlab-common```
-2. From MATLAB: ```>> addpath(genpath('/matlab-common'))```
+2. From MATLAB: `>> addpath(genpath('/matlab-common'))`
+
+```matlab
+>> addpath(genpath('/matlab-common'))
+```
+
 
 # Running
 Run ```testSingles.m``` in MATLAB.
