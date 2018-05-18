@@ -22,7 +22,8 @@ Ultralytics MATLAB common functions must also be cloned and added to the MATLAB 
 2. From MATLAB: `>> addpath(genpath('/matlab-common'))`
 
 # Running
-Run `testSingles.m` in MATLAB.
+
+From MATLAB: `>> testSingles.m`
 
 <img src="https://github.com/ultralytics/petsys/blob/master/results.png"> 
 
