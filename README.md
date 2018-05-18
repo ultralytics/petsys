@@ -23,7 +23,7 @@ Ultralytics MATLAB common functions must also be cloned and added to the MATLAB 
 
 # Running
 
-From MATLAB: `>> testSingles.m`
+From MATLAB: `>> testSingles`
 
 <img src="https://github.com/ultralytics/petsys/blob/master/results.png"> 
 
