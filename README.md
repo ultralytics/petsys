@@ -21,8 +21,8 @@ Ultralytics MATLAB common functions must also be cloned and added to the MATLAB 
 1. From shell: ```$ git clone https://github.com/ultralytics/matlab-common```
 2. From MATLAB: `>> addpath(genpath('/matlab-common'))`
 
-```python
->> addpath(genpath('/matlab-common'))
+``` python
+>> addpath(genpath("/matlab-common"))
 ```
 
 
