@@ -13,22 +13,16 @@ The https://github.com/ultralytics/petsys repo contains analysis of gamma scatte
 
 [MATLAB](https://www.mathworks.com/products/matlab.html) >= 2018a with the following toolbox installed:  
 
-- ```Statistics and Machine Learning Toolbox```
-- ```Signal Processing Toolbox```
+- `Statistics and Machine Learning Toolbox`
+- `Signal Processing Toolbox`
 
 Ultralytics MATLAB common functions must also be cloned and added to the MATLAB path:
 
-1. From shell: ```$ git clone https://github.com/ultralytics/matlab-common```
+1. From shell: `$ git clone https://github.com/ultralytics/matlab-common`
 2. From MATLAB: `>> addpath(genpath('/matlab-common'))`
 
-``` matlab
->> addpath(genpath("/matlab-common"))
-```
-
-
 # Running
-Run ```testSingles.m``` in MATLAB.
-
+Run `testSingles.m` in MATLAB.
 
 <img src="https://github.com/ultralytics/petsys/blob/master/results.png"> 
 
