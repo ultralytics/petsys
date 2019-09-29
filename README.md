@@ -20,8 +20,12 @@ The https://github.com/ultralytics/petsys repo contains analysis of gamma scatte
 
 From MATLAB: `>> testSingles`
 
-<img src="https://github.com/ultralytics/petsys/blob/master/results.png"> 
+<img src="https://github.com/ultralytics/petsys/blob/master/results.png">
+
+# Citation
+
+[![DOI](https://zenodo.org/badge/126519968.svg)](https://zenodo.org/badge/latestdoi/126519968)
 
 # Contact
 
-For questions or comments please contact Glenn Jocher at glenn.jocher@ultralytics.com or visit us at http://www.ultralytics.com/contact
+Issues should be raised directly in the repository. For additional questions or comments please email Glenn Jocher at glenn.jocher@ultralytics.com or visit us at https://contact.ultralytics.com.
