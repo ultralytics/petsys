@@ -24,7 +24,7 @@ From MATLAB: `>> testSingles`
 
 # Citation
 
-[![DOI](https://zenodo.org/badge/126519968.svg)](https://zenodo.org/badge/latestdoi/126519968)
+[![DOI](https://zenodo.org/badge/133869433.svg)](https://zenodo.org/badge/latestdoi/133869433)
 
 # Contact
 
