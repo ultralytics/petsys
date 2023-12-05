@@ -1,31 +1,59 @@
-<img src="https://storage.googleapis.com/ultralytics/UltralyticsLogoName1000×676.png" width="200">  
+<img src="https://storage.googleapis.com/ultralytics/UltralyticsLogoName1000×676.png" width="200">
 
-# Introduction
+## :sparkles: Introduction
 
-This directory contains software developed by Ultralytics LLC. For more information on Ultralytics projects please visit:
-http://www.ultralytics.com/projects
+Welcome to Ultralytics! We are thrilled to share our software with you. Ultralytics LLC is a dynamic team of experts committed to delivering cutting-edge analytical solutions. To explore more of our innovative projects, please check out our [website](http://www.ultralytics.com/projects).
 
-# Description
+## :page_with_curl: Project Description
 
-The https://github.com/ultralytics/petsys repo contains analysis of gamma scatters on LYSO crystals coupled to SiPMs. This data was collected at PETSYS labs in Lisbon, Portugal in 2017. This code performs energy calibration and timing resolution analysis of the data.
+The [ultralytics/petsys](https://github.com/ultralytics/petsys) repository is dedicated to the analysis of gamma scatter interactions within LYSO crystals connected to Silicon Photomultipliers (SiPMs). The experimental data we use was meticulously gathered at PETSYS labs in Lisbon, Portugal, back in 2017. Our codebase is designed to perform sophisticated tasks, such as energy calibration and timing resolution analysis on this dataset.
 
-# Requirements
+## :hammer_and_wrench: Requirements
 
-[MATLAB](https://www.mathworks.com/products/matlab.html) >= 2018a with a common functions repo `$ git clone https://github.com/ultralytics/functions-matlab` added to the MATLAB path `>> addpath(genpath('/functions-matlab'))` and the following toolboxes:
+Before you dive into running the software, ensure you have the following prerequisites fulfilled:
 
-- `Statistics and Machine Learning Toolbox`
-- `Signal Processing Toolbox`
+1. [MATLAB](https://www.mathworks.com/products/matlab.html) (version 2018a or later).
+2. Clone our common functions repository with the following command:
+   ```bash
+   git clone https://github.com/ultralytics/functions-matlab
+   ```
+   Once cloned, add the repo to your MATLAB path using:
+   ```matlab
+   addpath(genpath('/path/to/functions-matlab'))
+   ```
+   Replace `/path/to/` with the directory where you've cloned the repo.
+3. Ensure that you have the necessary MATLAB toolboxes installed:
+   - `Statistics and Machine Learning Toolbox`
+   - `Signal Processing Toolbox`
 
-# Running
+## :running: How to Run the Code
 
-From MATLAB: `>> testSingles`
+To initiate the analysis within MATLAB, simply execute the `testSingles` script by entering the following command in your MATLAB command window:
+```matlab
+>> testSingles
+```
+When you run this script, MATLAB will process the data according to the algorithms defined in our codebase, and you will be able to observe the results firsthand!
 
-<img src="https://github.com/ultralytics/petsys/blob/master/results.png">
+<img src="https://github.com/ultralytics/petsys/blob/master/results.png" alt="Analysis Results">
 
-# Citation
+## :bookmark_tabs: Citation
+
+If our project contributes to your research or if you find the dataset and code useful, please consider citing our work using the Zenodo DOI badge below:
 
 [![DOI](https://zenodo.org/badge/133869433.svg)](https://zenodo.org/badge/latestdoi/133869433)
 
-# Contact
+## :bell: Stay Connected
 
-Issues should be raised directly in the repository. For additional questions or comments please email Glenn Jocher at glenn.jocher@ultralytics.com or visit us at https://contact.ultralytics.com.
+If you encounter any issues or have queries, please feel free to raise them directly in the repository under the *Issues* section. Although we do not provide direct contact via email, Ultralytics offers a dedicated [contact platform](https://contact.ultralytics.com) where we are more than happy to assist you.
+
+---
+
+**License:**
+
+This project is distributed under the AGPL-3.0 license. Please ensure you comply with the terms of the license when using or modifying the code. 
+
+**Acknowledgements:**
+
+We would like to extend our gratitude to the researchers and staff at PETSYS labs for their valuable contributions to the dataset and their collaboration in this project.
+
+Enjoy exploring and analyzing gamma scatters with Ultralytics!
