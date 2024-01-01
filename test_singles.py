@@ -16,22 +16,22 @@ def exp1(x, a, b, c):
 
 def calibrate_energy(x):
     # convert energy from samples to keV using known calibration points px, py
-    px = np.array([0., 150, 173, 207])  # samples
-    py = np.array([0., 334, 511, 1274])  # keV (344 keV compton edge)
+    px = np.array([0.0, 150, 173, 207])  # samples
+    py = np.array([0.0, 334, 511, 1274])  # keV (344 keV compton edge)
 
     fit1, cov1 = curve_fit(exp1, px, py, p0=(7.0, 0.03, 0.0))
     # xspan = np.linspace(px.min(), px.max())
     # plt.plot(px, py, '.')
     # plt.plot(xspan, exp1(xspan, *fit1))
 
-    label = '%.3g * exp(%.3g * x) + %.3g' % tuple(fit1)
+    label = "%.3g * exp(%.3g * x) + %.3g" % tuple(fit1)
     return exp1(x, *fit1).clip(max=2000), label
 
 
-def test_singles(file='my_data_singles.txt'):
+def test_singles(file="my_data_singles.txt"):
     x = np.loadtxt(file)
     t, e, ch = x.transpose()  # time (ps), energy (samples), channel
-    print('Read %s, %g events recorded over %gs' % (file, x.shape[0], (t.max() - t.min()) / 1e12))
+    print("Read %s, %g events recorded over %gs" % (file, x.shape[0], (t.max() - t.min()) / 1e12))
 
     # calibrate energy
     e0 = copy(e)
@@ -84,26 +84,43 @@ def plots(x, e0, ecal, dt, efit_label):
     # seaborn plots
     fig, ax = plt.subplots(1, 3, figsize=(12, 4))
     ax = ax.ravel()
-    sns.distplot(e0, np.linspace(0, 300, 300), kde=False, axlabel='energy (samples)', ax=ax[0])
-    sns.distplot(ecal, np.linspace(0, 1500, 300), kde=False, axlabel='energy (keV)', ax=ax[1])
-    a = sns.distplot(dt, np.linspace(-400, 600, 50), kde=False, fit=stats.norm, axlabel='time (ps)',
-                     label="Normal fit $\mu=${0:.1f}, $\sigma=${1:.2f}".format(*stats.norm.fit(dt)), ax=ax[2])
+    sns.distplot(e0, np.linspace(0, 300, 300), kde=False, axlabel="energy (samples)", ax=ax[0])
+    sns.distplot(ecal, np.linspace(0, 1500, 300), kde=False, axlabel="energy (keV)", ax=ax[1])
+    a = sns.distplot(
+        dt,
+        np.linspace(-400, 600, 50),
+        kde=False,
+        fit=stats.norm,
+        axlabel="time (ps)",
+        label="Normal fit $\mu=${0:.1f}, $\sigma=${1:.2f}".format(*stats.norm.fit(dt)),
+        ax=ax[2],
+    )
     a.legend()
     fig.tight_layout()
-    fig.savefig('time_resolution.png', dpi=200)
+    fig.savefig("time_resolution.png", dpi=200)
 
     # seaborn energy calibration jointplot
     import pandas as pd
-    x = pd.DataFrame(np.stack((e0, ecal)).transpose(), columns=['energy (samples)', 'energy (keV)'])
-    a = sns.jointplot(data=x, x='energy (samples)', y='energy (keV)', xlim=[0, 300], ylim=[0, 1500],
-                      joint_kws=dict(gridsize=50), ratio=2, kind='hex', marginal_kws=dict(bins=500))
+
+    x = pd.DataFrame(np.stack((e0, ecal)).transpose(), columns=["energy (samples)", "energy (keV)"])
+    a = sns.jointplot(
+        data=x,
+        x="energy (samples)",
+        y="energy (keV)",
+        xlim=[0, 300],
+        ylim=[0, 1500],
+        joint_kws=dict(gridsize=50),
+        ratio=2,
+        kind="hex",
+        marginal_kws=dict(bins=500),
+    )
     a.ax_joint.text(10, 1400, efit_label)
-    plt.savefig('energy_calibration.png', dpi=200)
+    plt.savefig("energy_calibration.png", dpi=200)
 
     # Display to screen
-    if platform.system() == 'Darwin':  # MacOS
-        os.system('open energy_calibration.png')
+    if platform.system() == "Darwin":  # MacOS
+        os.system("open energy_calibration.png")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_singles()
