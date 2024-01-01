@@ -12,18 +12,21 @@ In our pursuit of advancing the realm of particle detection and imaging technolo
 ## 📦 Requirements
 
 Before you dive into the world of scintillation and photo-detection, you'll need to arm yourself with a few tools. Ensure you have [MATLAB](https://www.mathworks.com/products/matlab.html) version 2018a or higher at your disposal. Additionally, you'll need a set of MATLAB toolboxes geared toward statistical and signal processing. Here's how to get started:
-  
-- Clone our common functions repository using the command: 
+
+- Clone our common functions repository using the command:
+
 ```bash
 $ git clone https://github.com/ultralytics/functions-matlab
 ```
 
 - Integrate the repository into your MATLAB environment:
+
 ```matlab
 >> addpath(genpath('/functions-matlab'))
 ```
 
 Ensure the following MATLAB toolboxes are also installed:
+
 - `Statistics and Machine Learning Toolbox`
 - `Signal Processing Toolbox`
 
@@ -52,6 +55,7 @@ If this dataset and our analysis tools facilitate your research or pique your in
 We welcome contributions from the community! Whether you're fixing bugs, adding new features, or improving documentation, your input is invaluable. Take a look at our [Contributing Guide](https://docs.ultralytics.com/help/contributing) to get started. Also, we'd love to hear about your experience with Ultralytics products. Please consider filling out our [Survey](https://ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A huge 🙏 and thank you to all of our contributors!
 
 <!-- Ultralytics contributors -->
+
 <a href="https://github.com/ultralytics/yolov5/graphs/contributors">
 <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/image-contributors.png" alt="Ultralytics open-source contributors"></a>
 
