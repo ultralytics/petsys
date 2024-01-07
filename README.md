@@ -5,6 +5,8 @@
 
 Welcome to the official repository for the analysis of gamma scatter interactions on LYSO crystals, backed by Ultralytics' innovative approach to data-driven research in particle physics!
 
+[![Ultralytics Actions](https://github.com/ultralytics/petsys/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/petsys/actions/workflows/format.yml)
+
 ## 📜 Description
 
 In our pursuit of advancing the realm of particle detection and imaging technology, we've gathered a unique dataset from PETSYS electronics in Lisbon, Portugal. The [Ultralytics PETSYS repo](https://github.com/ultralytics/petsys) is dedicated to the meticulous analysis of gamma scatter phenomenon on LYSO crystals paired with Silicon Photomultipliers (SiPMs). The data, collected in 2017, serves as a foundation for our algorithms that conduct energy calibration and evaluate the timing resolution of these intricate detection systems.
