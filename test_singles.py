@@ -10,12 +10,12 @@ from scipy.optimize import curve_fit
 
 
 def exp1(x, a, b, c):
-    # f(x) = a*exp(b*x)+c
+    """Compute the exponential function f(x) = a*exp(b*x) + c for input array x."""
     return a * np.exp(b * x) + c
 
 
 def calibrate_energy(x):
-    # convert energy from samples to keV using known calibration points px, py
+    """Convert energy from samples to keV using known calibration points and an exponential fitting function."""
     px = np.array([0.0, 150, 173, 207])  # samples
     py = np.array([0.0, 334, 511, 1274])  # keV (344 keV compton edge)
 
@@ -29,6 +29,9 @@ def calibrate_energy(x):
 
 
 def test_singles(file="my_data_singles.txt"):
+    """Tests single events data from a file, calibrates energy, identifies 511 keV candidates, and generates diagnostic
+    plots.
+    """
     x = np.loadtxt(file)
     t, e, ch = x.transpose()  # time (ps), energy (samples), channel
     print("Read %s, %g events recorded over %gs" % (file, x.shape[0], (t.max() - t.min()) / 1e12))
@@ -58,7 +61,7 @@ def test_singles(file="my_data_singles.txt"):
 
 
 def plots(x, e0, ecal, dt, efit_label):
-    # matplotlib plots
+    """Generate and save various matplotlib and seaborn plots for given energy and time data arrays."""
     # fig, ax = plt.subplots(2, 3, figsize=(9, 6))
     # ax = ax.ravel()
     # ax[0].hist(e0, np.linspace(0, 300, 300))
