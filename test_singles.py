@@ -24,7 +24,7 @@ def calibrate_energy(x):
     # plt.plot(px, py, '.')
     # plt.plot(xspan, exp1(xspan, *fit1))
 
-    label = "%.3g * exp(%.3g * x) + %.3g" % tuple(fit1)
+    label = "{:.3g} * exp({:.3g} * x) + {:.3g}".format(*tuple(fit1))
     return exp1(x, *fit1).clip(max=2000), label
 
 
@@ -34,7 +34,7 @@ def test_singles(file="my_data_singles.txt"):
     """
     x = np.loadtxt(file)
     t, e, ch = x.transpose()  # time (ps), energy (samples), channel
-    print("Read %s, %g events recorded over %gs" % (file, x.shape[0], (t.max() - t.min()) / 1e12))
+    print(f"Read {file}, {x.shape[0]:g} events recorded over {(t.max() - t.min()) / 1e12:g}s")
 
     # calibrate energy
     e0 = copy(e)
@@ -95,7 +95,7 @@ def plots(x, e0, ecal, dt, efit_label):
         kde=False,
         fit=stats.norm,
         axlabel="time (ps)",
-        label="Normal fit $\mu=${0:.1f}, $\sigma=${1:.2f}".format(*stats.norm.fit(dt)),
+        label="Normal fit $\mu=${:.1f}, $\sigma=${:.2f}".format(*stats.norm.fit(dt)),
         ax=ax[2],
     )
     a.legend()
