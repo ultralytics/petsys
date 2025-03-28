@@ -28,8 +28,8 @@ Get started by:
     addpath(genpath('/path/to/functions-matlab')) % Replace /path/to/ with the actual directory
     ```
 3.  Ensuring the following MATLAB toolboxes are installed:
-    -   `Statistics and Machine Learning Toolbox`
-    -   `Signal Processing Toolbox`
+    - `Statistics and Machine Learning Toolbox`
+    - `Signal Processing Toolbox`
 
 With these prerequisites met, you're ready for high-fidelity analysis!
 
@@ -61,8 +61,8 @@ Contributions from the community are highly encouraged! Whether it's fixing bugs
 
 Ultralytics provides two licensing options to accommodate diverse needs:
 
--   **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) file for details.
--   **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source stipulations of AGPL-3.0. For commercial use inquiries, please contact us via [Ultralytics Licensing](https://www.ultralytics.com/license).
+- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) file for details.
+- **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source stipulations of AGPL-3.0. For commercial use inquiries, please contact us via [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Contact Us
 
