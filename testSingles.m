@@ -1,3 +1,5 @@
+% Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 function [] = testSingles()
 clc; close all
 A=fcnloadtextfile('my_data_singles.txt');  X=A.x;

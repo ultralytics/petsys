@@ -1,76 +1,72 @@
-<br>
-<a href="https://www.ultralytics.com/" target="_blank"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+<a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+
+[![Ultralytics Actions](https://github.com/ultralytics/petsys/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/petsys/actions/workflows/format.yml)
+[![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
+[![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
+[![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
 
 # 🚀 Introduction
 
-Welcome to the official repository for the analysis of gamma scatter interactions on LYSO crystals, backed by Ultralytics' innovative approach to data-driven research in particle physics!
-
-[![Ultralytics Actions](https://github.com/ultralytics/petsys/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/petsys/actions/workflows/format.yml)
+Welcome to the official Ultralytics repository dedicated to analyzing gamma scatter interactions on Lutetium–Yttrium Oxyorthosilicate (LYSO) crystals. This project leverages Ultralytics' expertise in data-driven research to advance understanding in [particle physics](https://home.cern/science/physics) and imaging technology.
 
 ## 📜 Description
 
-In our pursuit of advancing the realm of particle detection and imaging technology, we've gathered a unique dataset from PETSYS electronics in Lisbon, Portugal. The [Ultralytics PETSYS repo](https://github.com/ultralytics/petsys) is dedicated to the meticulous analysis of gamma scatter phenomenon on LYSO crystals paired with Silicon Photomultipliers (SiPMs). The data, collected in 2017, serves as a foundation for our algorithms that conduct energy calibration and evaluate the timing resolution of these intricate detection systems.
+Our goal is to push the boundaries of particle detection and imaging. This repository, [Ultralytics PETSYS](https://github.com/ultralytics/petsys), focuses on the detailed analysis of gamma scatter phenomena observed on LYSO crystals coupled with Silicon Photomultipliers (SiPMs). The dataset originates from PETSYS electronics in Lisbon, Portugal, collected in 2017. It forms the basis for our algorithms designed to perform energy calibration and assess the timing resolution of these sophisticated detection systems, crucial for applications like Positron Emission Tomography (PET).
 
 ## 📦 Requirements
 
-Before you dive into the world of scintillation and photo-detection, you'll need to arm yourself with a few tools. Ensure you have [MATLAB](https://www.mathworks.com/products/matlab.html) version 2018a or higher at your disposal. Additionally, you'll need a set of MATLAB toolboxes geared toward statistical and signal processing. Here's how to get started:
+To explore the intricacies of scintillation and photo-detection with our tools, you'll need specific software and toolboxes. Ensure you have [MATLAB](https://www.mathworks.com/products/matlab.html) version 2018a or newer installed. Additionally, certain MATLAB toolboxes focused on statistical analysis and signal processing are required.
 
-- Clone our common functions repository using the command:
+Get started by:
 
-```bash
-$ git clone https://github.com/ultralytics/functions-matlab
-```
+1.  Cloning our common functions repository:
+    ```bash
+    git clone https://github.com/ultralytics/functions-matlab
+    ```
+2.  Adding the repository path to your MATLAB environment:
+    ```matlab
+    addpath(genpath('/path/to/functions-matlab')) % Replace /path/to/ with the actual directory
+    ```
+3.  Ensuring the following MATLAB toolboxes are installed:
+    -   `Statistics and Machine Learning Toolbox`
+    -   `Signal Processing Toolbox`
 
-- Integrate the repository into your MATLAB environment:
-
-```matlab
->> addpath(genpath('/functions-matlab'))
-```
-
-Ensure the following MATLAB toolboxes are also installed:
-
-- `Statistics and Machine Learning Toolbox`
-- `Signal Processing Toolbox`
-
-Let's gear up for some high-fidelity analysis!
+With these prerequisites met, you're ready for high-fidelity analysis!
 
 ## 🏃‍♀️ Running the Code
 
-Starting the analysis is as straightforward as a MATLAB command. Simply type the following into your MATLAB console and watch the magic happen:
+Initiating the analysis is simple. Execute the following command in your MATLAB console:
 
 ```matlab
->> testSingles  % This script kicks off the analysis on the gamma scatter dataset
+testSingles  % This script starts the analysis of the gamma scatter dataset
 ```
 
-Enjoy the graphical outputs and insights generated by the script—like this stunning visualization:
+The script will generate graphical outputs and insights, including visualizations like the one shown below:
 
-<img src="https://github.com/ultralytics/petsys/blob/main/results.png">
+<img src="https://raw.githubusercontent.com/ultralytics/petsys/main/results.png" alt="Gamma scatter analysis results visualization">
 
 ## 📑 Citation
 
-If this dataset and our analysis tools facilitate your research or pique your interest in advanced gamma scatter analysis, please cite our work using the DOI provided below:
+If you find this dataset or our analysis tools beneficial for your research, please acknowledge our work by citing the DOI provided:
 
 [![DOI](https://zenodo.org/badge/133869433.svg)](https://zenodo.org/badge/latestdoi/133869433)
 
 ## 🤝 Contribute
 
-We welcome contributions from the community! Whether you're fixing bugs, adding new features, or improving documentation, your input is invaluable. Take a look at our [Contributing Guide](https://docs.ultralytics.com/help/contributing/) to get started. Also, we'd love to hear about your experience with Ultralytics products. Please consider filling out our [Survey](https://www.ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A huge 🙏 and thank you to all of our contributors!
+Contributions from the community are highly encouraged! Whether it's fixing bugs, proposing new features, or enhancing documentation, your input helps us improve. Please see our [Contributing Guide](https://docs.ultralytics.com/help/contributing/) for details on how to get started. We'd also appreciate hearing about your experience using Ultralytics products through our [Survey](https://www.ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A heartfelt 🙏 thank you to all our contributors!
 
-<!-- Ultralytics contributors -->
-
-<a href="https://github.com/ultralytics/yolov5/graphs/contributors">
-<img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/image-contributors.png" alt="Ultralytics open-source contributors"></a>
+[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 
 ## ©️ License
 
-Ultralytics is excited to offer two different licensing options to meet your needs:
+Ultralytics provides two licensing options to accommodate diverse needs:
 
-- **AGPL-3.0 License**: Perfect for students and hobbyists, this [OSI-approved](https://opensource.org/license) open-source license encourages collaborative learning and knowledge sharing. Please refer to the [LICENSE](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) file for detailed terms.
-- **Enterprise License**: Ideal for commercial use, this license allows for the integration of Ultralytics software and AI models into commercial products without the open-source requirements of AGPL-3.0. For use cases that involve commercial applications, please contact us via [Ultralytics Licensing](https://www.ultralytics.com/license).
+-   **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) file for details.
+-   **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source stipulations of AGPL-3.0. For commercial use inquiries, please contact us via [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Contact Us
 
-For bug reports, feature requests, and contributions, head to [GitHub Issues](https://github.com/ultralytics/velocity/issues). For questions and discussions about this project and other Ultralytics endeavors, join us on [Discord](https://discord.com/invite/ultralytics)!
+For bug reports, feature suggestions, and contributions, please visit [GitHub Issues](https://github.com/ultralytics/petsys/issues). For broader questions and discussions related to this project or other Ultralytics initiatives, join our active community on [Discord](https://discord.com/invite/ultralytics)!
 
 <br>
 <div align="center">
