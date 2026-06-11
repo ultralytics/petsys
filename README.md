@@ -15,7 +15,7 @@ Our goal is to push the boundaries of particle detection and imaging. This repos
 
 ## 📦 Requirements
 
-To explore the intricacies of scintillation and photo-detection with our tools, you'll need specific software and toolboxes. Ensure you have [MATLAB](https://www.mathworks.com/products/matlab.html) version 2018a or newer installed. Additionally, certain MATLAB toolboxes focused on statistical analysis and signal processing are required.
+To explore the intricacies of scintillation and photo-detection with our tools, you'll need specific software and toolboxes. Ensure you have [MATLAB](https://www.mathworks.com/products/matlab.html) R2018a or newer installed. Additionally, certain MATLAB toolboxes focused on statistical analysis and signal processing are required.
 
 Get started by:
 
@@ -23,13 +23,19 @@ Get started by:
     ```bash
     git clone https://github.com/ultralytics/functions-matlab
     ```
-2.  Adding the repository path to your MATLAB environment:
+2.  Adding this repository and the common functions repository to your MATLAB environment:
     ```matlab
-    addpath(genpath('/path/to/functions-matlab')) % Replace /path/to/ with the actual directory
+    addpath(genpath('/path/to/petsys'))
+    addpath(genpath('/path/to/functions-matlab'))
     ```
 3.  Ensuring the following MATLAB toolboxes are installed:
     - `Statistics and Machine Learning Toolbox`
     - `Signal Processing Toolbox`
+
+4.  Optionally installing the Python dependencies used by [`test_singles.py`](test_singles.py):
+    ```bash
+    python -m pip install matplotlib numpy pandas scipy seaborn
+    ```
 
 With these prerequisites met, you're ready for high-fidelity analysis!
 
@@ -41,9 +47,15 @@ Initiating the analysis is simple. Execute the following command in your MATLAB 
 testSingles  % This script starts the analysis of the gamma scatter dataset
 ```
 
-The script will generate graphical outputs and insights, including visualizations like the one shown below:
+You can also run the Python port from the repository root:
 
-<img src="https://raw.githubusercontent.com/ultralytics/petsys/main/results.png" alt="Gamma scatter analysis results visualization">
+```bash
+python test_singles.py
+```
+
+The scripts generate graphical outputs and insights, including visualizations like the one shown below:
+
+<img src="results.png" alt="Gamma scatter analysis results visualization">
 
 ## 📑 Citation
 
@@ -61,7 +73,7 @@ Contributions from the community are highly encouraged! Whether it's fixing bugs
 
 Ultralytics provides two licensing options to accommodate diverse needs:
 
-- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-v3) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) file for details.
+- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-3-0/) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](LICENSE) file for details.
 - **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source stipulations of AGPL-3.0. For commercial use inquiries, please contact us via [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Contact Us
