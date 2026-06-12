@@ -2,7 +2,7 @@
 
 # 🚀 Introduction
 
-Welcome to the official Ultralytics repository dedicated to analyzing gamma scatter interactions on Lutetium–Yttrium Oxyorthosilicate (LYSO) crystals. This project leverages Ultralytics' expertise in data-driven research to advance understanding in [particle physics](https://home.cern/science/physics) and imaging technology.
+Welcome to the official Ultralytics repository dedicated to analyzing gamma scatter interactions on Lutetium–Yttrium Oxyorthosilicate (LYSO) crystals. This project leverages Ultralytics' expertise in data-driven research to advance understanding in [particle physics](https://home.cern/science/physics/) and imaging technology.
 
 [![Ultralytics Actions](https://github.com/ultralytics/petsys/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/petsys/actions/workflows/format.yml)
 [![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
@@ -65,7 +65,7 @@ If you find this dataset or our analysis tools beneficial for your research, ple
 
 ## 🤝 Contribute
 
-Contributions from the community are highly encouraged! Whether it's fixing bugs, proposing new features, or enhancing documentation, your input helps us improve. Please see our [Contributing Guide](https://docs.ultralytics.com/help/contributing/) for details on how to get started. We'd also appreciate hearing about your experience using Ultralytics products through our [Survey](https://www.ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A heartfelt 🙏 thank you to all our contributors!
+Contributions from the community are highly encouraged! Whether it's fixing bugs, proposing new features, or enhancing documentation, your input helps us improve. Please see our [Contributing Guide](https://docs.ultralytics.com/help/contributing) for details on how to get started. We'd also appreciate hearing about your experience using Ultralytics products through our [Survey](https://www.ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A heartfelt 🙏 thank you to all our contributors!
 
 [![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 
@@ -73,7 +73,7 @@ Contributions from the community are highly encouraged! Whether it's fixing bugs
 
 Ultralytics provides two licensing options to accommodate diverse needs:
 
-- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-3-0/) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](LICENSE) file for details.
+- **AGPL-3.0 License**: An [OSI-approved](https://opensource.org/license/agpl-3-0) open-source license ideal for students and enthusiasts keen on contributing to open projects. See the [LICENSE](LICENSE) file for details.
 - **Enterprise License**: Designed for commercial applications, this license permits the integration of Ultralytics software and AI models into commercial products and services without the open-source stipulations of AGPL-3.0. For commercial use inquiries, please contact us via [Ultralytics Licensing](https://www.ultralytics.com/license).
 
 ## 📬 Contact Us
