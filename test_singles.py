@@ -21,7 +21,7 @@ def calibrate_energy(x):
     px = np.array([0.0, 150, 173, 207])  # samples
     py = np.array([0.0, 334, 511, 1274])  # keV (344 keV compton edge)
 
-    fit1, cov1 = curve_fit(exp1, px, py, p0=(7.0, 0.03, 0.0))
+    fit1, _cov1 = curve_fit(exp1, px, py, p0=(7.0, 0.03, 0.0))
     # xspan = np.linspace(px.min(), px.max())
     # plt.plot(px, py, '.')
     # plt.plot(xspan, exp1(xspan, *fit1))
