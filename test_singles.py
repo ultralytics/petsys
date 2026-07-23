@@ -97,7 +97,7 @@ def plots(x, e0, ecal, dt, efit_label):
         kde=False,
         fit=stats.norm,
         axlabel="time (ps)",
-        label="Normal fit $\mu=${:.1f}, $\sigma=${:.2f}".format(*stats.norm.fit(dt)),
+        label=r"Normal fit $\mu=${:.1f}, $\sigma=${:.2f}".format(*stats.norm.fit(dt)),
         ax=ax[2],
     )
     a.legend()
@@ -114,10 +114,10 @@ def plots(x, e0, ecal, dt, efit_label):
         y="energy (keV)",
         xlim=[0, 300],
         ylim=[0, 1500],
-        joint_kws=dict(gridsize=50),
+        joint_kws={"gridsize": 50},
         ratio=2,
         kind="hex",
-        marginal_kws=dict(bins=500),
+        marginal_kws={"bins": 500},
     )
     a.ax_joint.text(10, 1400, efit_label)
     plt.savefig("energy_calibration.png", dpi=200)
