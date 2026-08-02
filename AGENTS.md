@@ -31,8 +31,8 @@ After opening a PR:
 ## Commands
 
 ```bash
-python -m pip install matplotlib numpy pandas scipy seaborn  # Python dependencies (no requirements.txt in this repo)
-python test_singles.py                                       # Python analysis, writes time_resolution.png and energy_calibration.png
+python -m pip install matplotlib numpy pandas scipy seaborn # Python dependencies (no requirements.txt in this repo)
+python test_singles.py                                      # Python analysis, writes time_resolution.png and energy_calibration.png
 ```
 
 ```matlab
